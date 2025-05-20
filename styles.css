@@ -157,7 +157,7 @@ body {
     /* min-height: 800px;
     max-height: 1200px; */
     position: relative;
-    background-image: url('images/hero.png');
+    background-image: url('images/hero-com.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,8 +186,7 @@ body {
 .hero-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
-    font-size: 90PX;
-    /* font-size: clamp(2.5rem, 5vw, 5.625rem); */
+    font-size: clamp(2.8rem, 6vw, 6rem);
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin: 0;
