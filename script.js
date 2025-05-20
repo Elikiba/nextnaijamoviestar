@@ -105,11 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Create 6 more cards (total of 15)
             const currentCount = contestantsGrid.children.length;
             const names = [
-                "Amina Yusuf", "Chike Obi", "Efe Johnson", 
+                "Amina Yusuf", "Chidera Obi", "Efe Omorodion", 
                 "Fatima Bello", "Gbenga Adeleke", "Ifeoma Okoro",
-                "Jide Kosoko", "Kemi Adetiba", "Lola Shoneye",
-                "Mohammed Ali", "Ngozi Eze", "Olu Jacobs",
-                "Patience Ozokwor", "Queen Nwokoye", "Richard Mofe-Damijo"
+                "Jide Adeoye", "Funke Adetiba", "Lola Shoneye",
+                "Kemi Aliu", "Chinaza Ezeonu", "Aminat Jacobs",
+                "Chisom Ozokwor", "Adaeze Nwokoye", "Funke Mofe-Damijo"
             ];
             
             for (let i = 0; i < 6 && currentCount + i < 15; i++) {

@@ -100,7 +100,7 @@ body {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     margin-left: auto;
     flex-shrink: 0;
 }
@@ -108,12 +108,16 @@ body {
 .login-button {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 22px;
     letter-spacing: 0.02em;
     white-space: nowrap;
     transition: color 0.3s ease;
+}
+
+.login-button:hover {
+    color: #FFBA52;
 }
 
 .float {
@@ -146,12 +150,12 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero-section {
     width: 100%;
-    height: 100vh;
-    min-height: 800px;
-    max-height: 1200px;
+    height: 1100PX;
+    /* min-height: 800px;
+    max-height: 1200px; */
     position: relative;
     background-image: url('images/hero.png');
     background-size: cover;
@@ -166,7 +170,7 @@ body {
     width: 100%;
     max-width: 900px;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -182,10 +186,12 @@ body {
 .hero-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
-    font-size: clamp(2.5rem, 5vw, 5.625rem);
+    font-size: 90PX;
+    /* font-size: clamp(2.5rem, 5vw, 5.625rem); */
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin: 0;
+    padding-bottom: 0;
     color: #fff;
     animation: fadeInDown 1s ease-out;
 }
@@ -469,7 +475,6 @@ body {
     width: 100%;
     background-color: #fff;
     padding: 40px 0;
-    margin-top: 60px;
 }
 
 .footer-container {
@@ -607,7 +612,23 @@ body {
 
 
 /* Responsive Styles */
+@media (min-width: 769px) {
+    .logo-container {
+        margin-left: 90px;
+    }
+    
+    .header-right {
+        margin-right: 50px;
+        gap: 70px;
+    }
+}
+
 @media (max-width: 992px) {
+    .hero-content {
+        gap: 15px;
+        top: 80%;
+    }
+
     .judges-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -619,7 +640,7 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        height: 70px;
+        height: 100px;
         padding: 0 15px;
     }
     
@@ -661,12 +682,34 @@ body {
         margin-bottom: 40px;
     }
     
-    .hero-content {
-        top: 75%;
+   .hero-content {
+        gap: 15px;
+        top: 78%;
+    }
+
+    .contestants-section {
+        padding-top: 30px;
+    }
+
+     .section-title {
+        font-size: clamp(2.2rem, 6vw, 4rem);
+    }
+    
+    .section-title.judge {
+        font-size: clamp(2.2rem, 6vw, 4rem);
+    }
+
+    .judges-section {
+        padding-bottom: 30px;
     }
     
     .footer-section {
         padding-top: 30px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 35px;
     }
     
     .preloader {
@@ -692,4 +735,9 @@ body {
     .preloader-logo {
         font-size: 1.5rem;
     }
+
+    .footer-links {
+        display: flex;
+        gap: 20px;
+}
 }
