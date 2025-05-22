@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP | The Next Naija Movie Star</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo-dark.png">
+    <style>
+        /* OTP Specific Styles */
+        .otp-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .otp-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #000;
+        }
+        
+        .otp-instructions {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .otp-divider {
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 24px 0;
+            border: none;
+        }
+        
+        .otp-heading {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        
+        .otp-inputs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .otp-inputs input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .otp-resend {
+            color: #E58A00;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 30px;
+        }
+        
+        .otp-footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .otp-footer-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body class="signup-page">
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="images/logo.png" alt="Logo" class="preloader-img">
+        <div class="preloader-logo glow">The Next Naija Movie Star 🌟</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Next Naija Movie Star Logo" class="logo">
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu desktop-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html#contestants">Contestants</a></li>
+                    <li class="nav-item"><a href="index.html#judges">Judges</a></li>
+                    <li class="nav-item"><a href="index.html#about">About us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right desktop-nav">
+                <a href="#" class="login-button">Login</a>
+                <img src="images/season1.png" alt="Season 1" class="season">
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#contestants">Contestants</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#judges">Judges</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#about">About us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-extra">
+                <a href="#" class="mobile-login-button">Login</a>
+                <img src="images/season1.png" alt="Season 1" class="mobile-season">
+            </div>
+        </div>
+    </header>
+
+    <!-- OTP Verification Section -->
+    <section class="signup-section">
+        <div class="otp-container">
+            <h1 class="otp-title">Check your email</h1>
+            <p class="otp-instructions">We've sent a one-time password to your email.<br>Please enter it below to continue.</p>
+            
+            <hr class="otp-divider">
+            
+            <h2 class="otp-heading">Enter Password</h2>
+            <div class="otp-inputs">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+                <input type="text" maxlength="1" pattern="[0-9]">
+            </div>
+            
+            <a href="#" class="otp-resend">Didn't receive the email? Click to resend</a>
+            
+            <div class="otp-footer-links">
+                <a href="#" class="otp-footer-link">Back to log in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms of use</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Contact us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -578,9 +578,11 @@ body {
 
 /* ===== Footer Section ===== */
 .footer-section {
+  position: relative;
   width: 100%;
   background-color: #fff;
   padding: 25px 0;
+  border-top: 1px solid black;
 }
 
 .footer-container {
