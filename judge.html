@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Judge | The Next Naija Movie Star</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo-dark.png">
+    <style>
+        /* Judge Selection Specific Styles */
+        .judge-selection-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .judge-selection-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .judge-selection-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1B1B1B;
+        }
+        
+        .judge-selection-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #475467;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .judge-cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .judge-card {
+            background: #FFFFFF;
+            border: 1px solid #EAECF0;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .judge-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+        }
+        
+        .judge-image-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #FFBA52;
+        }
+        
+        .judge-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .judge-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1B1B1B;
+        }
+        
+        .judge-role {
+            font-size: 14px;
+            color: #667085;
+            margin-bottom: 20px;
+        }
+        
+        .select-judge-btn {
+            background-color: #FFBA52;
+            color: #1B1B1B;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .select-judge-btn:hover {
+            background-color: #ffcc7a;
+            transform: translateY(-2px);
+        }
+        
+        .submit-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .submit-btn {
+            background-color: #E58A00;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #d48206;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="signup-page">
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="images/logo.png" alt="Logo" class="preloader-img">
+        <div class="preloader-logo glow">The Next Naija Movie Star 🌟</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Next Naija Movie Star Logo" class="logo">
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu desktop-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html#contestants">Contestants</a></li>
+                    <li class="nav-item"><a href="index.html#judges">Judges</a></li>
+                    <li class="nav-item"><a href="index.html#about">About us</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right desktop-nav">
+                <a href="login.html" class="login-button">Login</a>
+                <img src="images/season1.png" alt="Season 1" class="season">
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#contestants">Contestants</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#judges">Judges</a></li>
+                    <li class="mobile-nav-item"><a href="index.html#about">About us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-extra">
+                <a href="login.html" class="mobile-login-button">Login</a>
+                <img src="images/season1.png" alt="Season 1" class="mobile-season">
+            </div>
+        </div>
+    </header>
+
+    <!-- Judge Selection Section -->
+    <section class="signup-section">
+        <div class="judge-selection-container">
+            <div class="judge-selection-header">
+                <h1 class="judge-selection-title">Select your Preferred Judge</h1>
+                <p class="judge-selection-description">
+                    Choose your mentor! Our expert judges are ready to guide you to stardom in Next Naija Movie Star.
+                </p>
+                <p class="judge-selection-description">
+                    Each brings their own style, expertise, and vision. Check out their profiles below, then tick the box for
+                    the judge you'd thrive under. Who's the one to take you to the top?
+                </p>
+            </div>
+            
+            <div class="judge-cards-container">
+                <!-- Judge 1 -->
+                <div class="judge-card">
+                    <div class="judge-image-container">
+                        <img src="images/uzor.png" alt="Uzor Arukwe" class="judge-image">
+                    </div>
+                    <h3 class="judge-name">Uzor Arukwe</h3>
+                    <p class="judge-role">Judge</p>
+                    <button class="select-judge-btn">Select</button>
+                </div>
+                
+                <!-- Judge 2 -->
+                <div class="judge-card">
+                    <div class="judge-image-container">
+                        <img src="images/isime.png" alt="Nancy Isime" class="judge-image">
+                    </div>
+                    <h3 class="judge-name">Nancy Isime</h3>
+                    <p class="judge-role">Judge</p>
+                    <button class="select-judge-btn">Select</button>
+                </div>
+                
+                <!-- Judge 3 -->
+                <div class="judge-card">
+                    <div class="judge-image-container">
+                        <img src="images/eso.png" alt="Eso Dike" class="judge-image">
+                    </div>
+                    <h3 class="judge-name">Eso Dike</h3>
+                    <p class="judge-role">Judge</p>
+                    <button class="select-judge-btn">Select</button>
+                </div>
+            </div>
+            
+            <div class="submit-section">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms of use</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Contact us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Judge selection functionality
+        document.querySelectorAll('.select-judge-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active state from all buttons
+                document.querySelectorAll('.select-judge-btn').forEach(btn => {
+                    btn.textContent = 'Select';
+                    btn.style.backgroundColor = '#FFBA52';
+                });
+                
+                // Set active state for clicked button
+                this.textContent = 'Selected ✓';
+                this.style.backgroundColor = '#039855';
+                this.style.color = 'white';
+            });
+        });
+    </script>
+</body>
+</html>
